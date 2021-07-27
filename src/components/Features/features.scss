@@ -1,0 +1,40 @@
+@use "../../common.scss" as *;
+
+.features {
+  &__list {
+    text-transform: unset;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+  }
+  &__item {
+    padding: 1.5rem 1rem;
+    max-width: 20rem;
+  }
+  &__icon {
+    margin-bottom: 1.25rem;
+    height: 5.375rem;
+    width: 5.375rem;
+  }
+  &__item-heading {
+    text-transform: capitalize;
+    font-family: $font-headings;
+  }
+  &__item-description {
+    color: $neu-dark-gray-violet;
+  }
+}
+
+@media only screen and (min-width: 60rem) {
+  .features {
+    &__list {
+      text-align: left;
+      justify-content: space-between;
+      flex-wrap: nowrap;
+    }
+    &__icon {
+      margin-bottom: 2rem;
+    }
+  }
+}

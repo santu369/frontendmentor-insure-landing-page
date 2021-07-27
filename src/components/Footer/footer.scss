@@ -1,0 +1,85 @@
+@use "../../common.scss" as *;
+
+.footer {
+  padding-top: 5em;
+  padding-bottom: 5em;
+  background-color: $neu-very-light-gray;
+  background-image: url(../../images/bg-pattern-footer-mobile.svg);
+  background-repeat: no-repeat;
+  background-position: top center;
+  &__icons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  &__branding {
+    margin-bottom: 1.5em;
+  }
+  &__logo {
+    width: 7rem;
+    height: 1.125rem;
+  }
+  &__socials {
+    position: relative;
+    margin-bottom: 3em;
+    width: 100%;
+    &:after {
+      position: absolute;
+      content: "";
+      left: 5%;
+      bottom: -75%;
+      width: 90%;
+      height: 1px;
+      background: rgba($prim-gray-blue, 0.5);
+    }
+  }
+}
+
+@media only screen and (min-width: 48rem) {
+  .footer {
+    flex-direction: column;
+    padding-left: 5rem;
+    padding-right: 5rem;
+    background-image: url(../../images/bg-pattern-footer-desktop.svg);
+    background-repeat: no-repeat;
+    background-position: top left;
+    &__icons {
+      position: relative;
+      margin-bottom: 3em;
+      &:after {
+        content: "";
+        position: absolute;
+        bottom: -100%;
+        width: 100%;
+        height: 1px;
+        background: rgba($prim-gray-blue, 0.5);
+      }
+    }
+    &__socials {
+      &:after {
+        display: none;
+      }
+    }
+    &__icons {
+      flex-direction: row;
+      justify-content: space-between;
+    }
+    &__branding {
+      margin-bottom: 0;
+    }
+    &__socials {
+      margin-bottom: 0;
+      width: auto;
+    }
+    &__navs {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+}
+
+@media only screen and (min-width: 61rem) {
+  .footer {
+    padding-right: 7rem;
+  }
+}

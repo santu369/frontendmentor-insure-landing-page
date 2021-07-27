@@ -1,23 +1,51 @@
-import logo from './logo.svg';
-import './App.css';
+import { useState } from "react";
+import "./App.scss";
+import FeaturesSection from "./components/FeaturesSection/FeaturesSection";
+import Header from "./components/Header/Header";
+import Hero from "./components/Hero/Hero";
+import Banner from "./components/Banner/Banner";
+import Footer from "./components/Footer/Footer";
+import ChallengeFooter from "./components/ChallengeFooter/ChallengeFooter";
 
 function App() {
+  const [menuState, setMenuState] = useState(false);
+  const [menuToggled, setMenuToggled] = useState(false);
+
+  const toggleNav = (event) => {
+    event.stopPropagation();
+    if (menuState) {
+      setMenuToggled((prevValue) => !prevValue);
+    }
+    setMenuState((prevValue) => !prevValue);
+    if (!menuState && menuToggled) {
+      setMenuToggled((prevValue) => !prevValue);
+    }
+  };
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="container-fluid app__container">
+      <Header
+        menuState={menuState}
+        menuToggled={menuToggled}
+        toggleNav={toggleNav}
+      />
+      <main className="main" style={{ display: +menuState ? "none" : "" }}>
+        <Hero />
+        <FeaturesSection />
+        <Banner />
+      </main>
+      <div
+        className="app__footer"
+        style={{ display: +menuState ? "none" : "" }}
+      >
+        <Footer />
+      </div>
+      <div
+        className="app__challengefooter"
+        style={{ display: +menuState ? "none" : "" }}
+      >
+        <ChallengeFooter />
+      </div>
     </div>
   );
 }

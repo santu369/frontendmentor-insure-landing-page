@@ -1,0 +1,28 @@
+@use "../../common.scss" as *;
+
+.footer {
+  &__socials-list {
+    display: inline-flex;
+    gap: 1em;
+  }
+  &__socials-link {
+    &:hover,
+    &:focus-visible {
+      img {
+        filter: brightness(50%);
+      }
+    }
+  }
+  &__socials-icon {
+    height: 1.5rem;
+    width: 1.5rem;
+  }
+}
+
+@media only screen and (min-width: 48rem) {
+  .footer {
+    &__socials-list {
+      margin-bottom: 0;
+    }
+  }
+}

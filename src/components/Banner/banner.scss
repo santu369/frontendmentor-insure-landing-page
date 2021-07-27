@@ -1,0 +1,48 @@
+@use "../../common.scss" as *;
+
+.banner {
+  display: flex;
+  flex-direction: column;
+  background-color: $prim-dark-violet;
+  background-image: url(../../images/bg-pattern-how-we-work-mobile.svg);
+  background-repeat: no-repeat;
+  background-position: top right;
+  color: $white;
+  margin-top: 6.5em;
+  margin-bottom: 6.5em;
+  padding: 3.5em;
+  &__heading {
+    font-family: $font-headings;
+    font-size: calc(2rem + 1.5vw);
+    line-height: 1;
+    margin-bottom: 1em;
+  }
+}
+
+@media only screen and (min-width: 48rem) {
+  .banner {
+    flex-direction: row;
+    margin-left: 5rem;
+    margin-right: 5rem;
+    background-image: url(../../images/bg-pattern-how-we-work-desktop.svg);
+    background-size: contain;
+    &__heading {
+      padding-right: 1em;
+      margin-bottom: 0;
+      text-align: left;
+    }
+    &__cta {
+      min-width: 12.5rem;
+      align-self: center;
+    }
+  }
+}
+@media only screen and (min-width: 64rem) {
+  .banner {
+    margin-right: 7rem;
+    justify-content: space-between;
+    &__heading {
+      padding-right: 2.75em;
+    }
+  }
+}

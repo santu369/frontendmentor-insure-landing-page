@@ -1,0 +1,17 @@
+@use "../../common.scss" as *;
+
+.cta-btn {
+  padding: 1em 2em;
+  text-transform: uppercase;
+  border: 1px solid $white;
+  color: $white;
+  font-weight: $font-bold;
+  z-index: 1;
+  &:hover,
+  &:focus-visible {
+    outline: $neu-very-light-gray dotted 0.25rem !important;
+    outline-offset: 0.15rem;
+    color: $neu-dark-violet;
+    background: $neu-very-light-gray;
+  }
+}

@@ -1,0 +1,40 @@
+@use "../../common.scss" as *;
+
+.features {
+  background-color: none;
+  margin-top: 7.5em;
+  &__heading {
+    font-family: $font-headings;
+    font-size: calc(2rem + 1.5vw);
+    position: relative;
+    &:before {
+      position: absolute;
+      content: "";
+      width: 7.5rem;
+      height: 0.1rem;
+      top: -60%;
+      left: 35%;
+      background: $prim-dark-violet;
+    }
+  }
+}
+
+@media only screen and (min-width: 60rem) {
+  .features {
+    margin-left: 5rem;
+    margin-right: 5rem;
+    margin-top: 12.5rem;
+    &__heading {
+      text-align: left;
+      &:before {
+        left: 0;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 61rem) {
+  .features {
+    margin-right: 7rem;
+  }
+}

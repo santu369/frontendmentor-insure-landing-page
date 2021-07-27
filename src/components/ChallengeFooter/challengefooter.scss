@@ -1,0 +1,31 @@
+@use "../../common.scss" as *;
+
+.challengefooter {
+  text-align: center;
+  font-size: 1rem;
+  padding-left: 1.5rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  color: $prim-dark-violet;
+  &__section {
+    margin-top: 1rem;
+  }
+  &__link {
+    display: inline-block;
+    color: $prim-dark-violet;
+    font-weight: $font-bold;
+    margin-left: 0.5em;
+    &:hover {
+      color: $prim-dark-violet;
+    }
+  }
+}
+
+@media only screen and (min-width: 48rem) {
+  .footer {
+    display: flex;
+    &__link {
+      margin-right: 2em;
+    }
+  }
+}
