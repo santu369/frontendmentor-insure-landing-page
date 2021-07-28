@@ -10,12 +10,12 @@ const FooterNav = ({ title, links }) => {
         {links.map((link, index) => {
           return (
             <li className="footer__item" key={index}>
-              {/* <SlideFromLeft> */}
-              {/* eslint-disable-next-line */}
-              <a href="#" target="_self" className="footer__link">
-                {link}
-              </a>
-              {/* </SlideFromLeft> */}
+              <SlideFromLeft>
+                {/* eslint-disable-next-line */}
+                <a href="#" target="_self" className="footer__link">
+                  {link}
+                </a>
+              </SlideFromLeft>
             </li>
           );
         })}

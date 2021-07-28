@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 import { useInView } from "react-intersection-observer";
 import { motion, useAnimation } from "framer-motion";
 
-const FadeInWhenVisible = ({ children }) => {
+const SlideFromLeft = ({ children }) => {
   const controls = useAnimation();
   const [ref, inView] = useInView();
 
@@ -28,4 +28,4 @@ const FadeInWhenVisible = ({ children }) => {
   );
 };
 
-export default FadeInWhenVisible;
+export default SlideFromLeft;
