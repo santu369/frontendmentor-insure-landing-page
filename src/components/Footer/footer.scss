@@ -2,7 +2,6 @@
 
 .footer {
   padding-top: 5em;
-  padding-bottom: 5em;
   background-color: $neu-very-light-gray;
   background-image: url(../../images/bg-pattern-footer-mobile.svg);
   background-repeat: no-repeat;
@@ -38,12 +37,12 @@
 @media only screen and (min-width: 48rem) {
   .footer {
     flex-direction: column;
-    padding-left: 5rem;
-    padding-right: 5rem;
     background-image: url(../../images/bg-pattern-footer-desktop.svg);
     background-repeat: no-repeat;
     background-position: top left;
     &__icons {
+      padding-left: 5rem;
+      padding-right: 5rem;
       position: relative;
       margin-bottom: 3em;
       &:after {
@@ -74,12 +73,18 @@
     &__navs {
       display: flex;
       justify-content: space-between;
+      padding-bottom: 5rem;
+      padding-left: 5rem;
+      padding-right: 5rem;
     }
   }
 }
 
 @media only screen and (min-width: 61rem) {
   .footer {
-    padding-right: 7rem;
+    &__navs,
+    &__icons {
+      padding-right: 7rem;
+    }
   }
 }

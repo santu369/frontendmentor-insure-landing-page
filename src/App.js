@@ -38,14 +38,16 @@ function App() {
         className="app__footer"
         style={{ display: +menuState ? "none" : "" }}
       >
-        <Footer />
+        <Footer>
+          <ChallengeFooter></ChallengeFooter>
+        </Footer>
       </div>
-      <div
+      {/* <div
         className="app__challengefooter"
         style={{ display: +menuState ? "none" : "" }}
       >
         <ChallengeFooter />
-      </div>
+      </div> */}
     </div>
   );
 }

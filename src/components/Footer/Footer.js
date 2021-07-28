@@ -8,7 +8,7 @@ import instagramLogo from "../../images/icon-instagram.svg";
 import FooterNav from "../FooterNav/FooterNav";
 import FooterSocials from "../FooterSocials/FooterSocials";
 
-const Footer = () => {
+const Footer = ({ children }) => {
   return (
     <footer className="footer">
       <div className="footer__icons">
@@ -45,6 +45,7 @@ const Footer = () => {
         />
         <FooterNav title={"others"} links={["careers", "press", "licenses"]} />
       </div>
+      {children}
     </footer>
   );
 };

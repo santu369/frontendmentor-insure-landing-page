@@ -14,7 +14,6 @@ const Hero = () => {
           <img
             src={desktopHeroImg}
             alt="Parents taking care of their two kids"
-            loading="lazy"
           />
         </picture>
       </div>
