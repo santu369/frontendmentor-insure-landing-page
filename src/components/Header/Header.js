@@ -6,7 +6,7 @@ import closeIcon from "../../images/icon-close.svg";
 
 const Header = ({ menuState, menuToggled, toggleNav }) => {
   return (
-    <header className="header p-4 d-flex align-items-center justify-content-between">
+    <header className="header d-flex align-items-center justify-content-between">
       {/* eslint-disable-next-line */}
       <a href="#" className="header__branding" target="_self">
         <img src={logo} alt="" className="header__logo" />
