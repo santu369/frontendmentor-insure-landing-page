@@ -8,7 +8,7 @@ const ChallengeFooter = () => {
         Challenge by
         <a
           className="challengefooter__link"
-          href="https://www.frontendmentor.io/challenges/project-tracking-intro-component-5d289097500fcb331a67d80e"
+          href="https://www.frontendmentor.io/challenges/insure-landing-page-uTU68JV8"
           rel="noopener noreferrer"
           target="_blank"
         >

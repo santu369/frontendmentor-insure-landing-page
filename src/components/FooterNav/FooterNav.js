@@ -1,4 +1,5 @@
 import React from "react";
+import SlideFromLeft from "../Animations/SlideFromLeft/SlideFromLeft";
 import "./footernav.scss";
 
 const FooterNav = ({ title, links }) => {
@@ -9,10 +10,12 @@ const FooterNav = ({ title, links }) => {
         {links.map((link, index) => {
           return (
             <li className="footer__item" key={index}>
-              {/* eslint-disable-next-line */}
-              <a href="#" target="_self" className="footer__link">
-                {link}
-              </a>
+              <SlideFromLeft>
+                {/* eslint-disable-next-line */}
+                <a href="#" target="_self" className="footer__link">
+                  {link}
+                </a>
+              </SlideFromLeft>
             </li>
           );
         })}

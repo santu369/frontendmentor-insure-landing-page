@@ -11,7 +11,11 @@ const Hero = () => {
         <picture className="hero__picture">
           <source media="(min-width:48rem)" srcSet={desktopHeroImg} />
           <source media="(min-width:20rem)" srcSet={mobileHeroImg} />
-          <img src={desktopHeroImg} alt="Family" />
+          <img
+            src={desktopHeroImg}
+            alt="Parents taking care of their two kids"
+            loading="lazy"
+          />
         </picture>
       </div>
       <section className="hero__section col-md-6 order-md-1">
