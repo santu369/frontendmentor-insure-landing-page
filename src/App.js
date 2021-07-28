@@ -6,7 +6,6 @@ import Hero from "./components/Hero/Hero";
 import Banner from "./components/Banner/Banner";
 import Footer from "./components/Footer/Footer";
 import ChallengeFooter from "./components/ChallengeFooter/ChallengeFooter";
-// import FadeInWhenVisible from "./components/FadeInWhenVisible/FadeInWhenVisible";
 
 function App() {
   const [menuState, setMenuState] = useState(false);

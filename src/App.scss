@@ -6,7 +6,6 @@ body {
   font-weight: $font-regular;
   text-align: center;
   min-width: 18.75rem;
-  // max-width: 200rem;
   position: relative;
   display: flex;
   justify-content: center;
@@ -81,18 +80,11 @@ button:active {
       overflow: hidden;
     }
   }
-  .app {
-    &__container {
-      // width: 60rem;
-    }
-  }
 }
 
 @media only screen and (min-width: 64rem) {
   .app {
     &__container {
-      // width: 70rem;
-      // width: 90vw;
       margin: auto;
     }
   }
