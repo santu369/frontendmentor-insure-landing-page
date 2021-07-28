@@ -2,8 +2,8 @@
 
 .footer {
   padding-top: 5em;
+  background-image: url(../../images/bg-pattern-footer-desktop.svg);
   background-color: $neu-very-light-gray;
-  background-image: url(../../images/bg-pattern-footer-mobile.svg);
   background-repeat: no-repeat;
   background-position: top center;
   &__icons {

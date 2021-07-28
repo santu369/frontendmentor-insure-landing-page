@@ -39,15 +39,9 @@ function App() {
         style={{ display: +menuState ? "none" : "" }}
       >
         <Footer>
-          <ChallengeFooter></ChallengeFooter>
+          <ChallengeFooter />
         </Footer>
       </div>
-      {/* <div
-        className="app__challengefooter"
-        style={{ display: +menuState ? "none" : "" }}
-      >
-        <ChallengeFooter />
-      </div> */}
     </div>
   );
 }
