@@ -84,8 +84,6 @@
   }
 }
 
-/* no animations for users who prefer reduced animations */
-
 @keyframes nav-visible {
   0% {
     left: -30rem;
@@ -112,12 +110,6 @@
   100% {
     left: -30rem;
     visibility: hidden;
-  }
-}
-
-@media (prefers-reduced-motion: reduce) {
-  * {
-    animation-duration: 1ms !important;
   }
 }
 

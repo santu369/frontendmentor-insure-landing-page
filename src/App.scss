@@ -58,6 +58,14 @@ button:active {
   transform: scale(0.9);
 }
 
+/* no animations for users who prefer reduced animations */
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 1ms !important;
+  }
+}
+
 @media only screen and (min-width: 48rem) {
   .app {
     &__container {
@@ -80,9 +88,6 @@ button:active {
       overflow: hidden;
     }
   }
-}
-
-@media only screen and (min-width: 64rem) {
   .app {
     &__container {
       margin: auto;
